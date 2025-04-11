@@ -1,0 +1,27 @@
+# Run these commands in order after installing Git
+
+# Set your Git identity
+git config --global user.name "sdsasdadd23242"
+git config --global user.email "baldosjss@gmail.com"
+
+# Initialize Git repository (skip if .git directory already exists)
+# git init
+
+# Add all files to Git
+git add .
+
+# Commit your changes
+git commit -m "Initial commit"
+
+# Add your GitHub repository as remote
+# Replace YOUR_REPO with your GitHub repository name
+git remote add origin https://github.com/sdsasdadd23242/YOUR_REPO.git
+
+# Push to GitHub
+git push -u origin main
+
+# If you're using a 'master' branch instead of 'main', use:
+# git push -u origin master
+
+# Note: You might need to authenticate with GitHub
+# Use a personal access token instead of your password if prompted 

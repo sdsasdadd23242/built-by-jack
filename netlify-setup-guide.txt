@@ -1,0 +1,29 @@
+# Setting up Netlify with GitHub Repository
+
+## Step 1: Push Your Code to GitHub
+1. Install Git if not already installed
+2. Follow the commands in git-setup-commands.txt to push your code to GitHub
+
+## Step 2: Connect to Netlify
+1. Go to https://app.netlify.com/ and log in
+2. Click "Add new site" -> "Import an existing project"
+3. Select "GitHub" as your Git provider
+4. Authorize Netlify to access your GitHub account
+5. Select your repository from the list
+
+## Step 3: Configure Build Settings
+1. For Build command, enter: npm run build
+2. For Publish directory, enter: out
+3. Click "Show advanced" and add any environment variables if needed
+4. Click "Deploy site"
+
+## Step 4: Configure Domain Settings (Optional)
+1. Go to "Domain settings" in your Netlify dashboard
+2. Click "Add custom domain" to use your own domain
+3. Follow the instructions to set up DNS records
+
+## Step 5: Verify Deployment
+1. Netlify will provide a URL for your site (something.netlify.app)
+2. Visit this URL to make sure your site is deployed correctly
+
+Your site is now set up for continuous deployment. Any changes pushed to GitHub will automatically be deployed to Netlify! 
