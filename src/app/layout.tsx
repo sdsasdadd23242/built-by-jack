@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} overflow-x-hidden`}>
         <Header />
-        <main className="min-h-screen pt-16 md:pt-20">
+        <main className="min-h-screen pt-16 md:pt-24 mx-auto max-w-[1920px]">
           {children}
         </main>
         <Footer />

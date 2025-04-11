@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-secondary/30 to-secondary/50 border-t">
-      <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
           {/* Branding */}
           <div className="lg:col-span-2">
@@ -24,25 +24,25 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-4 text-sm text-muted-foreground max-w-md">
               Transforming ideas into exceptional web experiences. 
               We build websites that look amazing and drive results.
             </p>
             
-            <div className="mt-6 space-y-3">
-              <div className="flex items-start">
+            <div className="mt-6 space-y-4">
+              <div className="flex items-start hover-lift">
                 <Mail className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
                 <a href="mailto:info@builtbyjack.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   info@builtbyjack.com
                 </a>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start hover-lift">
                 <Phone className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
                 <a href="tel:+61406878720" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   0406 878 720
                 </a>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start hover-lift">
                 <MapPin className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
                   Brisbane, Australia
@@ -52,9 +52,9 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div>
+          <div className="md:ml-8 lg:ml-12">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-600">Services</h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-4">
               <li>
                 <Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   All Services
@@ -78,9 +78,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:ml-4 lg:ml-8">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-600">Company</h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-4">
               <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About
@@ -94,9 +94,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:ml-4 lg:ml-8">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-600">Resources</h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-4">
               <li>
                 <Link href="/pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Pricing
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-blue-100 dark:border-blue-900/20 pt-8">
+        <div className="mt-16 border-t border-blue-100 dark:border-blue-900/20 pt-8">
           <p className="text-sm text-muted-foreground text-center">
             &copy; {new Date().getFullYear()} BuiltByJack. All rights reserved.
           </p>

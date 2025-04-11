@@ -48,10 +48,10 @@ export default function ContactPage() {
                   <div className="ml-4">
                     <p className="text-sm font-medium">Phone</p>
                     <a 
-                      href="tel:+11234567890" 
+                      href="tel:+61406878720" 
                       className="text-sm text-muted-foreground hover:text-primary"
                     >
-                      +1 (123) 456-7890
+                      0406 878 720
                     </a>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form className="bg-background rounded-xl border p-8">
+            <form className="bg-background rounded-xl border p-8 shadow-sm">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-medium mb-2">
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   variant="gradient"
-                  className="w-full sm:w-auto rounded-full flex items-center gap-2"
+                  className="w-full sm:w-auto rounded-full flex items-center gap-2 hover:shadow-md transition-all duration-300 hover:scale-105"
                   size="lg"
                 >
                   Send Message
