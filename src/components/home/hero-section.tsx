@@ -13,13 +13,13 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Background decoration */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 -left-4 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-1000"></div>
-        <div className="absolute top-0 -right-4 w-64 h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-3000"></div>
-        <div className="absolute -bottom-8 left-20 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-5000"></div>
+      <div className="absolute inset-0 z-0 opacity-60 md:opacity-100">
+        <div className="absolute top-0 -left-4 w-48 md:w-64 h-48 md:h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-1000"></div>
+        <div className="absolute top-0 -right-4 w-48 md:w-64 h-48 md:h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-3000"></div>
+        <div className="absolute -bottom-8 left-20 w-48 md:w-64 h-48 md:h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 dark:opacity-30 animate-blob animation-delay-5000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 lg:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Text content */}
           <motion.div
@@ -27,11 +27,11 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 mb-6">
-              <span className="text-sm font-medium text-blue-600 dark:text-blue-300">Professional Web Development</span>
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 mb-4 md:mb-6">
+              <span className="text-xs md:text-sm font-medium text-blue-600 dark:text-blue-300">Professional Web Development</span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               Elevate Your Brand With{" "}
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
                 AI-Powered
@@ -43,7 +43,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="mt-6 text-xl text-muted-foreground max-w-2xl"
+              className="mt-4 md:mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl"
             >
               Modern, responsive websites that attract customers and grow your business. We deliver high-performance sites designed for conversion.
             </motion.p>
@@ -52,19 +52,19 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-              className="mt-6 space-y-4"
+              className="mt-4 md:mt-6 space-y-3 md:space-y-4"
             >
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                <span className="text-muted-foreground">Custom designs tailored to your brand</span>
+                <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-green-500 mr-2 md:mr-3 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm md:text-base">Custom designs tailored to your brand</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                <span className="text-muted-foreground">SEO optimization for higher rankings</span>
+                <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-green-500 mr-2 md:mr-3 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm md:text-base">SEO optimization for higher rankings</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                <span className="text-muted-foreground">Lightning-fast performance</span>
+                <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-green-500 mr-2 md:mr-3 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm md:text-base">Lightning-fast performance</span>
               </div>
             </motion.div>
             
@@ -72,17 +72,17 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-              className="mt-10 flex flex-col sm:flex-row gap-4"
+              className="mt-6 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-4"
             >
               <Button 
                 size="lg" 
                 variant="gradient"
                 onClick={() => router.push("/contact")}
-                className="rounded-full text-lg px-8 group relative overflow-hidden"
+                className="rounded-full text-base md:text-lg px-6 md:px-8 py-2.5 md:py-3 group relative overflow-hidden"
               >
                 <span className="relative z-10">Get Started</span>
                 <span className="absolute right-4 top-1/2 transform -translate-y-1/2 transition-transform group-hover:translate-x-1">
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Button>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                 size="lg" 
                 variant="outline"
                 onClick={() => router.push("/services")}
-                className="rounded-full text-lg px-8 border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30"
+                className="rounded-full text-base md:text-lg px-6 md:px-8 py-2.5 md:py-3 border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30"
               >
                 Learn More
               </Button>
@@ -102,9 +102,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="relative mt-8 md:mt-0"
+            className="relative mt-6 md:mt-0"
           >
-            <div className="relative w-full h-[400px] md:h-[500px]">
+            <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px]">
               <div className="absolute z-10 inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl transform rotate-1 opacity-20 shadow-lg"></div>
               <div className="absolute z-20 inset-0 bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
                 {/* Main laptop mockup */}
@@ -150,7 +150,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Floating mobile mockup */}
-                <div className="absolute right-6 top-[15%] w-[25%] h-[45%] bg-gray-800 rounded-2xl border-4 border-gray-700 shadow-2xl overflow-hidden rotate-6 animate-float z-30 hidden sm:block">
+                <div className="absolute right-6 top-[15%] w-[25%] h-[45%] bg-gray-800 rounded-2xl border-4 border-gray-700 shadow-2xl overflow-hidden rotate-6 z-30 hidden sm:block transform-gpu will-change-transform animate-float">
                   <div className="absolute top-0 left-0 right-0 h-4 bg-gray-700"></div>
                   <div className="absolute top-4 left-0 right-0 bottom-0 bg-white">
                     <div className="p-2">
@@ -163,7 +163,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Code floating element */}
-                <div className="absolute -right-6 bottom-[25%] w-[35%] h-[25%] bg-black/80 backdrop-blur-sm text-green-400 p-3 rounded-lg font-mono text-xs z-20 shadow-xl border border-gray-700 rotate-3 animate-float-slow">
+                <div className="absolute -right-6 bottom-[25%] w-[35%] h-[25%] bg-black/80 backdrop-blur-sm text-green-400 p-3 rounded-lg font-mono text-xs z-20 shadow-xl border border-gray-700 rotate-3 transform-gpu will-change-transform animate-float-slow hidden sm:block">
                   <div className="text-blue-400">function <span className="text-yellow-400">createAwesome</span>() {`{`}</div>
                   <div className="pl-3"><span className="text-green-300">return</span> <span className="text-purple-400">new</span> <span className="text-yellow-400">Website</span>();</div>
                   <div>{`}`}</div>
