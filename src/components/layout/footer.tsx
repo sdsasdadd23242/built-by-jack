@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -30,12 +30,6 @@ const Footer = () => {
             </p>
             
             <div className="mt-6 space-y-4">
-              <div className="flex items-start hover-lift">
-                <Mail className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
-                <a href="mailto:info@builtbyjack.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  info@builtbyjack.com
-                </a>
-              </div>
               <div className="flex items-start hover-lift">
                 <Phone className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
                 <a href="tel:+61406878720" className="text-sm text-muted-foreground hover:text-primary transition-colors">

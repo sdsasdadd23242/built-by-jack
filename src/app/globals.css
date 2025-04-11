@@ -84,40 +84,12 @@
   }
 }
 
-@keyframes blob {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  33% {
-    transform: translate(20px, -30px) scale(1.05);
-  }
-  66% {
-    transform: translate(-15px, 15px) scale(0.95);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
-}
-
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
 
 .animate-pulse-slow {
   animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.animate-blob {
-  animation: blob 10s infinite;
-  will-change: transform;
-}
-
-.animation-delay-2000 {
-  animation-delay: 2000ms;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4000ms;
 }
 
 /* Custom Gradient Text */
@@ -147,20 +119,12 @@
   .animate-float {
     animation-duration: 10s;
   }
-  
-  .animate-blob {
-    animation-duration: 15s;
-  }
 }
 
 /* Desktop optimizations */
 @media (min-width: 1280px) {
   .animate-float {
     animation-duration: 8s;
-  }
-  
-  .animate-blob {
-    animation-duration: 12s;
   }
   
   /* Wider container for large screens */
