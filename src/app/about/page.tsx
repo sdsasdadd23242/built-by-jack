@@ -58,7 +58,7 @@ export default function AboutPage() {
               At BuiltByJack, we envision a future where every business, regardless of size, can have a powerful and effective web presence. We're making that future a reality today.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
-              Founded in 2022, we've quickly established ourselves as experts in web development. Our team combines expertise in design, development, and optimization to create websites that don't just look amazing—they drive results.
+              Our team combines expertise in design, development, and optimization to create websites that don't just look amazing—they drive results.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
               We believe that the best websites are those that understand and adapt to user needs. That's why we integrate cutting-edge technologies that create seamless user experiences.
