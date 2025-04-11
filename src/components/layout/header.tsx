@@ -24,10 +24,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center group h-16">
-            <div className="relative w-[240px] h-16">
+          <Link href="/" className="flex items-center group h-12 md:h-16">
+            <div className="relative w-[180px] md:w-[240px] h-12 md:h-16">
               <Image 
                 src="/images/839710a6-9f28-433d-bda7-dce3d6317746.png" 
                 alt="BuiltByJack Logo" 
@@ -75,9 +75,9 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-5 w-5" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-5 w-5" />
             )}
           </button>
         </div>
@@ -90,7 +90,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden py-6 px-4 bg-background border-b shadow-md"
+          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/95 backdrop-blur-md py-6 px-4 overflow-y-auto z-50"
         >
           <nav className="flex flex-col space-y-6">
             {navLinks.map((link) => (

@@ -32,3 +32,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# optimized images backups
+public/images/*_original.jpg
+public/images/*_original.jpeg
+public/images/*_original.png
+public/images/*_original.webp
+
+# editor files
+.idea/
+.vscode/
+*.swp
+*.swo
