@@ -14,8 +14,7 @@ git add .
 git commit -m "Initial commit"
 
 # Add your GitHub repository as remote
-# Replace YOUR_REPO with your GitHub repository name
-git remote add origin https://github.com/sdsasdadd23242/YOUR_REPO.git
+git remote add origin https://github.com/sdsasdadd23242/built-by-jack.git
 
 # Push to GitHub
 git push -u origin main

@@ -1,0 +1,29 @@
+Step 1: Install Git
+- Download from: https://git-scm.com/download/win
+- Run the installer and use all default options
+- Restart your PowerShell/command prompt after installation
+
+Step 2: Run these Git commands in PowerShell (copy/paste each line)
+  git config --global user.name "sdsasdadd23242"
+  git config --global user.email "baldosjss@gmail.com"
+  git add .
+  git commit -m "Initial commit"
+  git remote add origin https://github.com/sdsasdadd23242/built-by-jack.git
+  git push -u origin main
+
+Step 3: When prompted for GitHub authentication
+- Enter your GitHub username: sdsasdadd23242
+- For password: use a personal access token (not your regular password)
+- To create a token: https://github.com/settings/tokens → "Generate new token"
+- Give it "repo" permissions and copy the token for use as your password
+
+Step 4: Deploy on Netlify
+- Go to: https://app.netlify.com/
+- Click "Add new site" → "Import an existing project"
+- Choose GitHub and select "built-by-jack" repository
+- Build command: npm run build
+- Publish directory: out
+- Click "Deploy site"
+
+Your site will be deployed with a Netlify URL like: something.netlify.app
+You can later set up a custom domain if you want. 
