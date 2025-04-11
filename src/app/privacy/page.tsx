@@ -5,8 +5,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | AIWebDev",
-  description: "Learn about how we collect, use, and protect your personal information at AIWebDev.",
+  title: "Privacy Policy | BuiltByJack",
+  description: "Learn about how we collect, use, and protect your personal information at BuiltByJack.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -25,13 +25,13 @@ export default function PrivacyPolicyPage() {
         <SectionTitle
           pretitle="Legal"
           title="Privacy Policy"
-          description="Last updated: April 11, 2025"
+          description="Last updated: January 1, 2025"
         />
 
         <div className="mt-12 prose prose-blue max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            At AIWebDev ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal data. This privacy policy informs you about how we look after your personal data when you visit our website and explains your privacy rights and how the law protects you.
+            At BuiltByJack ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal data. This privacy policy informs you about how we look after your personal data when you visit our website and explains your privacy rights and how the law protects you.
           </p>
           
           <h2>2. The Data We Collect</h2>
@@ -105,7 +105,12 @@ export default function PrivacyPolicyPage() {
 
           <h2>11. Contact Us</h2>
           <p>
-            If you have any questions about this privacy policy or our privacy practices, please reach out through the contact form on our website.
+            If you have any questions about this privacy policy or our privacy practices, please contact us at:
+          </p>
+          <p>
+            <strong>Email:</strong> info@builtbyjack.com<br />
+            <strong>Phone:</strong> 0406 878 720<br />
+            <strong>Location:</strong> Brisbane, Australia
           </p>
         </div>
       </div>
