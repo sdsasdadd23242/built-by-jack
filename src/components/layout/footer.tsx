@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Github, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -38,8 +38,8 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
-                <a href="tel:+61400000000" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  +61 400 000 000
+                <a href="tel:+61406878720" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  0406 878 720
                 </a>
               </div>
               <div className="flex items-start">
@@ -48,29 +48,6 @@ const Footer = () => {
                   Brisbane, Australia
                 </span>
               </div>
-            </div>
-            
-            <div className="mt-6 flex space-x-4">
-              <a href="https://facebook.com/builtbyjack" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="https://twitter.com/builtbyjack" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a href="https://instagram.com/builtbyjack" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a href="https://linkedin.com/company/builtbyjack" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a href="https://github.com/builtbyjack" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
             </div>
           </div>
 

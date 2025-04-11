@@ -150,7 +150,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Floating mobile mockup */}
-                <div className="absolute right-6 top-[15%] w-[25%] h-[45%] bg-gray-800 rounded-2xl border-4 border-gray-700 shadow-2xl overflow-hidden rotate-6 z-30 hidden sm:block transform-gpu will-change-transform animate-float">
+                <div className="absolute right-6 top-[15%] w-[25%] h-[45%] bg-gray-800 rounded-2xl border-4 border-gray-700 shadow-2xl overflow-hidden rotate-6 z-30 hidden sm:block" style={{ animation: 'float 4s ease-in-out infinite' }}>
                   <div className="absolute top-0 left-0 right-0 h-4 bg-gray-700"></div>
                   <div className="absolute top-4 left-0 right-0 bottom-0 bg-white">
                     <div className="p-2">
@@ -163,7 +163,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Code floating element */}
-                <div className="absolute -right-6 bottom-[25%] w-[35%] h-[25%] bg-black/80 backdrop-blur-sm text-green-400 p-3 rounded-lg font-mono text-xs z-20 shadow-xl border border-gray-700 rotate-3 transform-gpu will-change-transform animate-float-slow hidden sm:block">
+                <div className="absolute -right-6 bottom-[25%] w-[35%] h-[25%] bg-black/80 backdrop-blur-sm text-green-400 p-3 rounded-lg font-mono text-xs z-20 shadow-xl border border-gray-700 rotate-3 hidden sm:block" style={{ animation: 'float-slow 6s ease-in-out infinite' }}>
                   <div className="text-blue-400">function <span className="text-yellow-400">createAwesome</span>() {`{`}</div>
                   <div className="pl-3"><span className="text-green-300">return</span> <span className="text-purple-400">new</span> <span className="text-yellow-400">Website</span>();</div>
                   <div>{`}`}</div>

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -37,6 +37,14 @@ const Header = () => {
               />
             </div>
           </Link>
+
+          {/* Phone Number - Desktop */}
+          <div className="hidden md:flex items-center mr-6">
+            <a href="tel:+61406878720" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 mr-2 text-blue-600" />
+              <span className="text-sm font-medium">0406 878 720</span>
+            </a>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-10">
@@ -93,6 +101,12 @@ const Header = () => {
           className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/95 backdrop-blur-md py-6 px-4 overflow-y-auto z-50"
         >
           <nav className="flex flex-col space-y-6">
+            {/* Phone Number - Mobile */}
+            <a href="tel:+61406878720" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+              <Phone className="h-5 w-5 mr-3 text-blue-600" />
+              <span className="text-base font-medium">0406 878 720</span>
+            </a>
+            
             {navLinks.map((link) => (
               <Link
                 key={link.href}
