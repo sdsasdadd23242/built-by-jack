@@ -58,7 +58,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form className="bg-background rounded-xl border p-8 shadow-sm">
+            <form className="bg-background rounded-xl border p-8 shadow-sm" action="mailto:builtbyjack.com@gmail.com" method="post" encType="text/plain">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-medium mb-2">
@@ -90,7 +90,7 @@ export default function ContactPage() {
                     type="email"
                     id="email"
                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="johndoe@example.com"
+                    placeholder="youremail@example.com"
                   />
                 </div>
                 <div>

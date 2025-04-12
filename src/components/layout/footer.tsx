@@ -37,6 +37,15 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-start hover-lift">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:builtbyjack.com@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  builtbyjack.com@gmail.com
+                </a>
+              </div>
+              <div className="flex items-start hover-lift">
                 <MapPin className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
                   Brisbane, Australia

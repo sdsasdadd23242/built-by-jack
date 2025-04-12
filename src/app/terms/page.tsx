@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
             If you have any questions about these Terms, please contact us at:
           </p>
           <p>
-            <strong>Email:</strong> info@builtbyjack.com<br />
+            <strong>Email:</strong> builtbyjack.com@gmail.com<br />
             <strong>Phone:</strong> 0406 878 720<br />
             <strong>Location:</strong> Brisbane, Australia
           </p>

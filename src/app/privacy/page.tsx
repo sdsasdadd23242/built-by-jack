@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
             If you have any questions about this privacy policy or our privacy practices, please contact us at:
           </p>
           <p>
-            <strong>Email:</strong> info@builtbyjack.com<br />
+            <strong>Email:</strong> builtbyjack.com@gmail.com<br />
             <strong>Phone:</strong> 0406 878 720<br />
             <strong>Location:</strong> Brisbane, Australia
           </p>
