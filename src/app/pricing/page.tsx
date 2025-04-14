@@ -137,9 +137,9 @@ export default function PricingPage() {
                   <div className="mt-4 text-center">
                     <span className="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">{plan.price}</span>
                   </div>
-                  <p className="mt-4 text-muted-foreground text-center">{plan.description}</p>
+                  <p className="mt-3 text-muted-foreground text-center h-16">{plan.description}</p>
                   
-                  <div className="mt-6">
+                  <div className="mt-5">
                     <Button
                       variant={plan.highlighted ? "gradient" : "outline"}
                       className="w-full rounded-full"
@@ -151,8 +151,8 @@ export default function PricingPage() {
                 </div>
                 
                 <div className="px-6 pb-6 pt-3 bg-gray-50 dark:bg-gray-900/40">
-                  <p className="font-medium mb-4 text-center">What's included:</p>
-                  <ul className="space-y-3.5">
+                  <p className="font-medium mb-4 text-center text-sm uppercase tracking-wide">What's included:</p>
+                  <ul className="space-y-3">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start">
                         <Check className="h-5 w-5 text-green-500 flex-shrink-0 mr-3 mt-0.5" />
@@ -173,11 +173,11 @@ export default function PricingPage() {
           
           {/* Add-Ons Section */}
           <div className="mt-24">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-2">
-                <span className="inline-block">💎</span> Add-Ons & Extras
+            <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2">
+                Add-Ons & Extras
               </h2>
-              <p className="text-center text-muted-foreground mb-10 text-lg">
+              <p className="text-center text-muted-foreground mb-10 text-base sm:text-lg">
                 Enhance your website with these powerful upgrades
               </p>
             </div>
@@ -191,13 +191,13 @@ export default function PricingPage() {
                   transition={{ duration: 0.5, delay: 0.5 + (index * 0.1) }}
                   className="bg-card border border-border rounded-xl p-6 flex flex-col hover:border-blue-300 hover:shadow-md transition-all"
                 >
-                  <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mr-3">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mr-3">
                       <Plus className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
-                    <h3 className="font-semibold text-lg">{addon.name}</h3>
+                    <h3 className="font-medium text-base">{addon.name}</h3>
                   </div>
-                  <p className="text-xl font-bold my-2 text-blue-600 dark:text-blue-400">{addon.price}</p>
+                  <p className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">{addon.price}</p>
                   <p className="text-sm text-muted-foreground flex-grow">{addon.description}</p>
                 </motion.div>
               ))}
@@ -238,16 +238,16 @@ export default function PricingPage() {
           </div>
           
           {/* CTA Section */}
-          <div className="mt-24 text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 sm:p-10 rounded-2xl">
+          <div className="mt-24 text-center bg-gradient-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10 p-6 sm:p-10 rounded-xl border border-blue-100 dark:border-blue-900/20">
             <h2 className="text-2xl sm:text-3xl font-bold">Ready to Launch Your New Website?</h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg px-2">
-              Take the first step toward growing your business online. Get started today and have your new website in as little as 3 days!
+            <p className="mt-3 text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
+              Take the first step toward growing your business online today.
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 variant="gradient"
                 size="lg"
-                className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg"
+                className="rounded-full px-6 sm:px-8 py-4 sm:py-5 text-base"
                 asChild
               >
                 <Link href="/contact">Get Started Now</Link>
@@ -255,7 +255,7 @@ export default function PricingPage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg"
+                className="rounded-full px-6 sm:px-8 py-4 sm:py-5 text-base border-blue-200 dark:border-blue-800"
                 asChild
               >
                 <Link href="/portfolio">View Our Work</Link>

@@ -26,18 +26,25 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group h-12 md:h-16">
-            <div className="relative w-[180px] md:w-[240px] h-12 md:h-16">
-              <Image 
-                src="/images/839710a6-9f28-433d-bda7-dce3d6317746.png" 
-                alt="BuiltByJack Logo" 
-                fill
-                className="object-contain hover:opacity-90 transition-opacity" 
-                priority
-              />
-            </div>
-          </Link>
+          {/* Mobile Menu Button - Now on Left Side */}
+          <button
+            className="md:hidden p-3 rounded-full hover:bg-secondary/70 transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <X className="h-7 w-7" />
+            ) : (
+              <Menu className="h-7 w-7" />
+            )}
+          </button>
+          
+          {/* Clean, centered site name instead of logo */}
+          <div className="flex-1 flex justify-center md:justify-start">
+            <Link href="/" className="font-bold text-xl tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              BuiltByJack
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-10">
@@ -69,18 +76,8 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-3 rounded-full hover:bg-secondary/70 transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="h-7 w-7" />
-            ) : (
-              <Menu className="h-7 w-7" />
-            )}
-          </button>
+          {/* Empty div for mobile to maintain layout */}
+          <div className="md:hidden w-9"></div>
         </div>
       </div>
 
@@ -91,14 +88,19 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/95 backdrop-blur-md py-8 px-6 overflow-y-auto z-50"
+          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/98 backdrop-blur-md py-8 px-6 overflow-y-auto z-50 border-t"
         >
+          <div className="flex justify-center mb-8">
+            <span className="font-bold text-2xl tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              BuiltByJack
+            </span>
+          </div>
           <nav className="flex flex-col space-y-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-lg font-medium transition-colors hover:text-primary ${
+                className={`text-lg font-medium transition-colors hover:text-primary text-center ${
                   pathname === link.href
                     ? "text-primary font-semibold"
                     : "text-muted-foreground"
