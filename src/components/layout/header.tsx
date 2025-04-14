@@ -71,14 +71,14 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-full hover:bg-secondary/50 transition-colors"
+            className="md:hidden p-3 rounded-full hover:bg-secondary/70 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-5 w-5" />
+              <X className="h-7 w-7" />
             ) : (
-              <Menu className="h-5 w-5" />
+              <Menu className="h-7 w-7" />
             )}
           </button>
         </div>
@@ -91,14 +91,14 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/95 backdrop-blur-md py-6 px-4 overflow-y-auto z-50"
+          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/95 backdrop-blur-md py-8 px-6 overflow-y-auto z-50"
         >
-          <nav className="flex flex-col space-y-6">
+          <nav className="flex flex-col space-y-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-base font-medium transition-colors hover:text-primary ${
+                className={`text-lg font-medium transition-colors hover:text-primary ${
                   pathname === link.href
                     ? "text-primary font-semibold"
                     : "text-muted-foreground"
@@ -114,7 +114,7 @@ const Header = () => {
                 router.push("/contact");
                 setMobileMenuOpen(false);
               }}
-              className="w-full rounded-full py-3 text-base"
+              className="w-full rounded-full py-4 text-base font-medium mt-4"
             >
               Get Started
             </Button>

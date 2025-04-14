@@ -113,7 +113,7 @@ export default function PricingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 gap-y-10 md:gap-8 lg:grid-cols-3"
           >
             {plans.map((plan, index) => (
               <motion.div
@@ -125,7 +125,7 @@ export default function PricingPage() {
                   plan.highlighted
                     ? "border-blue-500 shadow-xl relative"
                     : "border-border shadow-sm"
-                } hover:shadow-lg transition-shadow bg-card`}
+                } hover:shadow-lg transition-shadow bg-card max-w-md mx-auto w-full`}
               >
                 {plan.highlighted && (
                   <div className="absolute top-0 left-0 right-0 bg-blue-500 text-white text-center text-sm font-medium py-1.5">
@@ -182,7 +182,7 @@ export default function PricingPage() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {addOns.map((addon, index) => (
                 <motion.div
                   key={index}
@@ -192,8 +192,8 @@ export default function PricingPage() {
                   className="bg-card border border-border rounded-xl p-6 flex flex-col hover:border-blue-300 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mr-3">
-                      <Plus className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                    <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mr-3">
+                      <Plus className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <h3 className="font-semibold text-lg">{addon.name}</h3>
                   </div>
@@ -206,48 +206,48 @@ export default function PricingPage() {
           
           {/* FAQ Section */}
           <div className="mt-24">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">How do I know which package is right for me?</h3>
-                  <p className="mt-2 text-muted-foreground">Choose the Starter Site if you need something simple and quick. The Business Builder is our most popular option for established businesses. Select the Growth Pro if you're serious about growing your online presence with more content and features.</p>
+            <div className="max-w-3xl mx-auto px-4 sm:px-0">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Frequently Asked Questions</h2>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">How do I know which package is right for me?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">Choose the Starter Site if you need something simple and quick. The Business Builder is our most popular option for established businesses. Select the Growth Pro if you're serious about growing your online presence with more content and features.</p>
                 </div>
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">What happens after I submit my order?</h3>
-                  <p className="mt-2 text-muted-foreground">After you submit your order, we'll contact you within 24 hours to gather information about your business and requirements. Once we have everything we need, we'll begin work according to the timeline for your selected package.</p>
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">What happens after I submit my order?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">After you submit your order, we'll contact you within 24 hours to gather information about your business and requirements. Once we have everything we need, we'll begin work according to the timeline for your selected package.</p>
                 </div>
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">Do you offer custom packages?</h3>
-                  <p className="mt-2 text-muted-foreground">Yes! These packages are our most popular configurations, but we can customize any package to meet your specific needs. Contact us to discuss your requirements and we'll create a custom solution just for you.</p>
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">Do you offer custom packages?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">Yes! These packages are our most popular configurations, but we can customize any package to meet your specific needs. Contact us to discuss your requirements and we'll create a custom solution just for you.</p>
                 </div>
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">What's your payment process?</h3>
-                  <p className="mt-2 text-muted-foreground">We require a 50% deposit to begin work, with the remaining balance due upon completion before your website goes live. We accept credit/debit cards, bank transfers, and PayPal for your convenience.</p>
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">What's your payment process?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">We require a 50% deposit to begin work, with the remaining balance due upon completion before your website goes live. We accept credit/debit cards, bank transfers, and PayPal for your convenience.</p>
                 </div>
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">Can I update my website myself after it's built?</h3>
-                  <p className="mt-2 text-muted-foreground">For simple content updates, we offer training to help you make changes yourself. For more complex changes, you can use our Extended Support plan or request changes on an as-needed basis at our standard hourly rate.</p>
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">Can I update my website myself after it's built?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">For simple content updates, we offer training to help you make changes yourself. For more complex changes, you can use our Extended Support plan or request changes on an as-needed basis at our standard hourly rate.</p>
                 </div>
-                <div className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold">What if I need more pages than my package includes?</h3>
-                  <p className="mt-2 text-muted-foreground">No problem! You can add additional pages to any package for $99 per page. Just let us know what additional pages you need during the initial consultation.</p>
+                <div className="bg-card border border-border rounded-xl p-5 sm:p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-base sm:text-lg font-semibold">What if I need more pages than my package includes?</h3>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">No problem! You can add additional pages to any package for $99 per page. Just let us know what additional pages you need during the initial consultation.</p>
                 </div>
               </div>
             </div>
           </div>
           
           {/* CTA Section */}
-          <div className="mt-24 text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-10 rounded-2xl">
-            <h2 className="text-3xl font-bold">Ready to Launch Your New Website?</h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-lg">
+          <div className="mt-24 text-center bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-6 sm:p-10 rounded-2xl">
+            <h2 className="text-2xl sm:text-3xl font-bold">Ready to Launch Your New Website?</h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg px-2">
               Take the first step toward growing your business online. Get started today and have your new website in as little as 3 days!
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 variant="gradient"
                 size="lg"
-                className="rounded-full px-8 py-6 text-lg"
+                className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg"
                 asChild
               >
                 <Link href="/contact">Get Started Now</Link>
@@ -255,7 +255,7 @@ export default function PricingPage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 py-6 text-lg"
+                className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg"
                 asChild
               >
                 <Link href="/portfolio">View Our Work</Link>
