@@ -28,14 +28,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Mobile Menu Button - Now on Left Side */}
           <button
-            className="md:hidden p-3 rounded-full hover:bg-secondary/70 transition-colors"
+            className="md:hidden p-3 rounded-full bg-secondary/40 hover:bg-secondary/80 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-7 w-7" />
+              <X className="h-7 w-7 text-blue-600" />
             ) : (
-              <Menu className="h-7 w-7" />
+              <Menu className="h-7 w-7 text-blue-600" />
             )}
           </button>
           
@@ -88,7 +88,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/98 backdrop-blur-md py-8 px-6 overflow-y-auto z-50 border-t"
+          className="md:hidden fixed top-16 left-0 right-0 h-[calc(100vh-4rem)] bg-background/98 backdrop-blur-md py-8 px-6 overflow-y-auto z-50 border-t border-blue-100 dark:border-blue-900/20"
         >
           <div className="flex justify-center mb-8">
             <span className="font-bold text-2xl tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -102,7 +102,7 @@ const Header = () => {
                 href={link.href}
                 className={`text-lg font-medium transition-colors hover:text-primary text-center ${
                   pathname === link.href
-                    ? "text-primary font-semibold"
+                    ? "text-blue-600 font-semibold"
                     : "text-muted-foreground"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
