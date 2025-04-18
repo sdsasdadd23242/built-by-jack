@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import SectionTitle from "@/components/ui/section-title";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, ArrowRight } from "lucide-react";
+import ContactForm from "@/components/contact/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us | BuiltByJack",
@@ -58,99 +59,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <form className="bg-background rounded-xl border p-8 shadow-sm" action="mailto:builtbyjack.com@gmail.com" method="post" encType="text/plain">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="first-name" className="block text-sm font-medium mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="last-name" className="block text-sm font-medium mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Doe"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="youremail@example.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="+1 (123) 456-7890"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="company" className="block text-sm font-medium mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Your Company Ltd."
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="website" className="block text-sm font-medium mb-2">
-                    Current Website (if any)
-                  </label>
-                  <input
-                    type="url"
-                    id="website"
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="https://example.com"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={6}
-                    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Tell us about your project and requirements..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <Button
-                  type="submit"
-                  variant="gradient"
-                  className="w-full sm:w-auto rounded-full flex items-center gap-2 hover:shadow-md transition-all duration-300 hover:scale-105"
-                  size="lg"
-                >
-                  Send Message
-                  <ArrowRight className="h-5 w-5" />
-                </Button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
