@@ -2,6 +2,80 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import StructuredData from "@/components/seo/StructuredData";
+import { serviceSchema } from "@/lib/structured-data";
+
+// Create a Brisbane web design specific schema
+const webDesignBrisbaneSchema = {
+  ...serviceSchema,
+  "@type": "Service",
+  "name": "Web Design Brisbane Services",
+  "serviceType": "Web Design",
+  "description": "Professional web design services for Brisbane businesses. Beautiful, responsive, and functional websites tailored to Brisbane businesses.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuiltByJack",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brisbane",
+      "addressRegion": "QLD",
+      "addressCountry": "AU"
+    },
+    "telephone": "+61-7-1234-5678",
+    "url": "https://builtbyjack.com/services/web-design-brisbane"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Brisbane",
+    "@id": "https://en.wikipedia.org/wiki/Brisbane"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "299",
+    "highPrice": "899",
+    "priceCurrency": "AUD",
+    "offerCount": "3"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Brisbane Web Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Starter Site",
+          "description": "1-page scroll site (Home, About, Contact), Mobile-friendly & fast, Contact form or booking link, Basic SEO setup"
+        },
+        "price": "299",
+        "priceCurrency": "AUD",
+        "priceValidUntil": "2024-12-31"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Builder",
+          "description": "Up to 3 pages, Mobile-first + performance optimized, Contact form + Google Maps, Basic SEO + social media links"
+        },
+        "price": "499",
+        "priceCurrency": "AUD",
+        "priceValidUntil": "2024-12-31"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Growth Pro",
+          "description": "Up to 6 pages, Mobile + desktop optimization, Speed & SEO performance tuned, Basic analytics setup, Newsletter integration"
+        },
+        "price": "899",
+        "priceCurrency": "AUD",
+        "priceValidUntil": "2024-12-31"
+      }
+    ]
+  }
+};
 
 export const metadata: Metadata = {
   title: "Professional Web Design Services in Brisbane | BuiltByJack",
@@ -12,6 +86,7 @@ export const metadata: Metadata = {
 export default function WebDesignBrisbane() {
   return (
     <div className="container mx-auto px-4 py-12">
+      <StructuredData data={webDesignBrisbaneSchema} />
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">Web Design Brisbane</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -33,10 +108,14 @@ export default function WebDesignBrisbane() {
           </Link>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-20"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-xl font-semibold">Brisbane Skyline Image</span>
-          </div>
+          <Image 
+            src="/images/brisbane-skyline.jpg" 
+            alt="Brisbane City Skyline" 
+            fill 
+            style={{ objectFit: 'cover' }} 
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20"></div>
         </div>
       </div>
 
@@ -74,20 +153,20 @@ export default function WebDesignBrisbane() {
         <h2 className="text-3xl font-bold mb-6">Why Choose Us for Your Brisbane Website?</h2>
         <div className="grid md:grid-cols-4 gap-6 mt-10">
           <div className="p-4">
-            <div className="font-bold text-5xl text-blue-600 mb-2">5+</div>
+            <div className="font-bold text-5xl text-blue-600 mb-2">2+</div>
             <p className="text-lg">Years of Experience</p>
           </div>
           <div className="p-4">
-            <div className="font-bold text-5xl text-blue-600 mb-2">100+</div>
+            <div className="font-bold text-5xl text-blue-600 mb-2">10+</div>
             <p className="text-lg">Brisbane Clients</p>
           </div>
           <div className="p-4">
             <div className="font-bold text-5xl text-blue-600 mb-2">24/7</div>
-            <p className="text-lg">Local Support</p>
+            <p className="text-lg">Support Available</p>
           </div>
           <div className="p-4">
             <div className="font-bold text-5xl text-blue-600 mb-2">100%</div>
-            <p className="text-lg">Satisfaction Rate</p>
+            <p className="text-lg">Client Satisfaction</p>
           </div>
         </div>
       </div>
