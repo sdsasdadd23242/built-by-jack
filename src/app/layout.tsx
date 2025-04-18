@@ -19,9 +19,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "BuiltByJack - Custom Website Development",
-  description: "Premium website development services for businesses and individuals. We create fast, beautiful, and high-converting websites.",
-  keywords: ["web development", "website design", "responsive websites", "business websites"],
+  title: "BuiltByJack - Affordable Website Development Brisbane",
+  description: "Premium yet affordable website development services in Brisbane. We create fast, beautiful, and high-converting websites at competitive prices.",
+  keywords: ["web development Brisbane", "affordable websites Brisbane", "cheap website design Brisbane", "website development Brisbane", "responsive websites Brisbane", "business websites Brisbane", "budget-friendly web design", "Brisbane web developer"],
   authors: [{ name: "BuiltByJack Team" }],
   creator: "BuiltByJack",
   publisher: "BuiltByJack",
@@ -42,24 +42,24 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_AU",
     url: "https://builtbyjack.com",
-    title: "BuiltByJack - Custom Website Development",
-    description: "Premium website development services for businesses and individuals. We create fast, beautiful, and high-converting websites.",
+    title: "BuiltByJack - Affordable Website Development Brisbane",
+    description: "Premium yet affordable website development services in Brisbane. We create fast, beautiful, and high-converting websites at competitive prices.",
     siteName: "BuiltByJack",
     images: [
       {
         url: "https://builtbyjack.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "BuiltByJack - Custom Website Development"
+        alt: "BuiltByJack - Affordable Website Development Brisbane"
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuiltByJack - Custom Website Development",
-    description: "Premium website development services for businesses and individuals. We create fast, beautiful, and high-converting websites.",
+    title: "BuiltByJack - Affordable Website Development Brisbane",
+    description: "Premium yet affordable website development services in Brisbane. We create fast, beautiful, and high-converting websites at competitive prices.",
     creator: "@builtbyjack",
     images: ["https://builtbyjack.com/images/twitter-image.jpg"],
   },

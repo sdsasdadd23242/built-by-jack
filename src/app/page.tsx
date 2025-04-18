@@ -6,8 +6,12 @@ import CTASection from "@/components/home/cta-section";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BuiltByJack - Custom Website Development",
-  description: "We build stunning, high-performing websites. From design to development, we create web experiences that drive results.",
+  title: "Affordable Website Development in Brisbane | BuiltByJack",
+  description: "Brisbane's trusted provider of affordable, high-quality websites. Get a professional website at competitive prices without compromising on quality or performance.",
+  keywords: ["cheap websites Brisbane", "affordable web design Brisbane", "budget website development Brisbane", "cost-effective web solutions", "Brisbane web developer"],
+  alternates: {
+    canonical: "https://builtbyjack.com"
+  }
 };
 
 export default function HomePage() {
