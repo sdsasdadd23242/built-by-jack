@@ -316,6 +316,23 @@ export default function CheapWebsitesBrisbane() {
               Yes, all our websites are built to be scalable. You can start with a basic package and upgrade with additional pages, features, or functionality as your business grows.
             </p>
           </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3">Do you build websites for all Brisbane suburbs?</h3>
+            <p>Yes! We work with businesses across all Brisbane suburbs, including Fortitude Valley, South Bank, New Farm, West End, and more.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3">Why choose a Brisbane-based web developer?</h3>
+            <p>As a Brisbane-based team, we understand the local market and can tailor your website to attract more customers in Brisbane and Southeast Queensland.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center mt-10 mb-20">
+        <h3 className="text-lg font-semibold mb-2">Explore More Brisbane Services:</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/brisbane-web-development" className="text-blue-600 underline">Brisbane Web Development</Link>
+          <Link href="/services/seo-brisbane" className="text-blue-600 underline">SEO Brisbane</Link>
+          <Link href="/services/web-design-brisbane" className="text-blue-600 underline">Web Design Brisbane</Link>
         </div>
       </div>
 

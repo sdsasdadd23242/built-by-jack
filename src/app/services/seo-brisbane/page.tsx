@@ -73,7 +73,7 @@ export default function SEOBrisbane() {
         <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
           <Image 
             src="/images/brisbane-skyline.jpg" 
-            alt="Brisbane City Skyline" 
+            alt="SEO services for Brisbane businesses - Brisbane City Skyline" 
             fill 
             style={{ objectFit: 'cover' }} 
             priority
@@ -256,6 +256,35 @@ export default function SEOBrisbane() {
         <Link href="/contact" className="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-md transition duration-300 inline-block">
           Get Started Today
         </Link>
+      </div>
+
+      {/* Brisbane SEO FAQ Section */}
+      <div className="bg-gray-50 rounded-xl p-8 my-20">
+        <h2 className="text-2xl font-bold mb-6 text-center">Brisbane SEO Frequently Asked Questions</h2>
+        <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3">How does local SEO help my Brisbane business?</h3>
+            <p>Local SEO targets customers in Brisbane searching for your services, helping you appear in Google Maps and local search results, driving more relevant traffic to your website.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3">How long does it take to see SEO results in Brisbane?</h3>
+            <p>Most Brisbane businesses see noticeable improvements in 2-3 months, but SEO is an ongoing process for long-term growth and visibility.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3">Do you only work with Brisbane businesses?</h3>
+            <p>While we specialize in Brisbane SEO, we also help businesses across Southeast Queensland and Australia. Our local expertise gives Brisbane clients an edge in the local market.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Internal Links to Other Brisbane Pages */}
+      <div className="text-center mt-10 mb-20">
+        <h3 className="text-lg font-semibold mb-2">Explore More Brisbane Services:</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/brisbane-web-development" className="text-blue-600 underline">Brisbane Web Development</Link>
+          <Link href="/cheap-websites-brisbane" className="text-blue-600 underline">Cheap Websites Brisbane</Link>
+          <Link href="/services/web-design-brisbane" className="text-blue-600 underline">Web Design Brisbane</Link>
+        </div>
       </div>
     </div>
   );

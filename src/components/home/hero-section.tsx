@@ -132,7 +132,7 @@ const HeroSection = () => {
                   <div className="relative w-[80%] h-[80%]">
                     <Image
                       src="/images/839710a6-9f28-433d-bda7-dce3d6317746.png"
-                      alt="BuiltByJack Logo"
+                      alt="Affordable web design in Brisbane - BuiltByJack Logo"
                       fill
                       className="object-contain"
                       priority
